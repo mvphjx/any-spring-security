@@ -28,13 +28,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     }
 
     /**
-     * 在内存中创建一个名为 "anoy" 的用户，密码为 "pwd"，拥有 "USER" 权限
+     * 在内存中创建一个名为 "han" 的用户，密码为 "123"，拥有 "USER" 权限
      */
     @Override
     protected void configure(AuthenticationManagerBuilder builder) throws Exception{
         builder
                 .inMemoryAuthentication()
-                .withUser("anoy").password("pwd").roles("USER");
+                .withUser("han").password("123").roles("USER");
     }
 
 }
