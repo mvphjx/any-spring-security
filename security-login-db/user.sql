@@ -35,6 +35,7 @@ CREATE TABLE `user` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `user` VALUES ('1', 'anoy', 'pwd', 'anoy', 'ROLE_USER'), ('2', 'admin', 'pwd', 'admin', 'ROLE_USER,ROLE_ADMIN');
+INSERT INTO `user` VALUES ('3', 'han', '123', 'hanjx', 'ROLE_USER');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
